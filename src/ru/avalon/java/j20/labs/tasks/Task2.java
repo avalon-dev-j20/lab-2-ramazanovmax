@@ -3,7 +3,9 @@ package ru.avalon.java.j20.labs.tasks;
 import ru.avalon.java.j20.labs.Task;
 
 import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
+import java.io.Reader;
 
 /**
  * Задание №2
@@ -54,6 +56,9 @@ public class Task2 implements Task {
      * @throws IOException в случае ошибок ввода-вывода.
      */
     private String read(File file) throws IOException {
+        try(Reader reader = new FileReader()){
+
+        }
         throw new UnsupportedOperationException("Not implement yet!");
     }
 
